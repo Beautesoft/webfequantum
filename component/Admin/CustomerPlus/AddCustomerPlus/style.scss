@@ -1,0 +1,84 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.create-customer-section {
+  background-color: $white;
+  padding: 20px 0;
+  .create-customerplus {
+    max-width: 1400px;
+    margin: auto;
+    .input-group {
+      input,
+      select,
+      textarea {
+        font-size: fontSize(20px);
+        font-family: Muli-Regular;
+        font-weight: normal;
+        background: #f9f9f9;
+        border: 0.25px solid #c0c0c0;
+        height: 57px;
+      }
+    }
+    .btn {
+      font-family: Muli-Regular;
+    }
+    .icon-calendar {
+      color: #b3b3b3;
+      top: 16px;
+    }
+
+    .customer-detail {
+      margin: 30px 50px;
+      .form-group {
+        .gender {
+          select {
+            height: 57px;
+          }
+        }
+        .select-icon {
+          top: 27px;
+        }
+      }
+      .dob-pick {
+        width: 100%;
+        position: absolute;
+        // opacity: 0;
+        // opacity: 0;
+        // z-index: 99;
+        input {
+          width: 100%;
+          padding: 15px;
+        }
+      }
+      .icon-calendar {
+        z-index: 2;
+        right: 15px;
+        margin-right: 0;
+        position: absolute;
+        font-size: 25px;
+        // top: 0px;
+      }
+      .danger-btn {
+        width: 100%;
+      }
+    }
+  }
+  
+}
+.corp-box{
+  width: 50%;  
+  margin-left: 25px;
+.corp-cust-box{
+  border: 0.25px solid #c0c0c0;
+  width: 100%;
+  margin-bottom: 10px;  
+  padding: 10px;
+}
+.table{
+  border: 0.25px solid #c0c0c0;
+  margin-left: 15px;
+  margin-top: 1rem;  
+}
+}
+.input-group-padding {
+  padding: 15px;
+}

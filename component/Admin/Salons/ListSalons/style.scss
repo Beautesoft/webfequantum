@@ -1,0 +1,21 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.list-salon {
+  .search-box {
+    input {
+      // height: 45px;
+    }
+  }
+  .add-saloon {
+    height: 37px;
+  }
+  .horizontal-more-befor {
+    width: 42px;
+  }
+  .table-striped > tbody > tr > td {
+    vertical-align: middle;
+  }
+  .option {
+    width: 150px;
+  }
+}

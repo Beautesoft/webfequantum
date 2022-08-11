@@ -1,0 +1,65 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.customer-list {
+  .head-label {
+    font-family: Muli-Regular;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #222222;
+  }
+  .btn {
+    height: 35px;
+  }
+  .filter-section {
+    position: relative;
+    .filter-category {
+      position: absolute;
+      background: $white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      padding: 10px;
+      max-width: 205px;
+      min-width: 205px;
+      min-height: 195px;
+      top: 50px;
+      right: 0;
+      .subcategory {
+        font-family: Muli-Regular;
+        font-size: fontSize(18px);
+        line-height: 23px;
+        color: #888888;
+        padding: 8px;
+      }
+    }
+  }
+  .filter-by {
+    padding: 20px 30px;
+    background: $white;
+    margin-top: 20px;
+    .head {
+      font-family: Muli-SemiBold;
+      font-size: fontSize(18px);
+      line-height: 23px;
+      color: #222222;
+    }
+    .label {
+      font-size: fontSize(14px);
+      line-height: 16px;
+      padding: 8px 0;
+    }
+    .form-control {
+      padding: 0;
+      height: 30px;
+      border: 1px solid #949494;
+    }
+    select {
+      background: transparent;
+      color: #696969;
+    }
+    .select .select-icon {
+      top: 11px;
+      right: 18px;
+    }
+  }
+}

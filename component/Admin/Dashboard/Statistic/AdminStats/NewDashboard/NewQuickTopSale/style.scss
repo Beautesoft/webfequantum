@@ -1,0 +1,44 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+.TopTen {
+  .TopTen-title {
+    color: $primary-color;
+  }
+  .cursor {
+    cursor: pointer;
+    color: $primary-color;
+    background: $white;
+  }
+  .table-body {
+    font-size: 11px;
+  }
+  .topten-circle {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    padding: 1px;
+    color: $primaryalt-color;
+    border: 2.5px solid $primaryalt-color;
+    border-radius: 50%;
+  }
+  .select .select-icon {
+    font-size: 6px;
+    position: absolute;
+    top: 17px !important;
+    right: 27px;
+    color: #424242;
+  }
+  .active {
+    background-color: $primary-color;
+    color: $white;
+  }
+  .activeColor {
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  .button-shadow {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+}

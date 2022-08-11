@@ -1,0 +1,49 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+@media (min-width: 576px)
+{
+  .modal-dialog.multiple-appointment {
+      // max-width: 560px;
+      margin: 1.75rem auto;
+      font-size: 14px;
+      .select .select-icon {
+        top: 15px;
+        right: 15px;
+    }
+    .form-control {
+        border: unset;
+        padding: 0px 5px;
+        background: #c0c0c01a;
+        height: 30px;
+    }
+    .modal-content{
+      .modal-body{
+        .create{
+          justify-content: center;
+          button {
+            background: $green;
+            border-radius: 3px;
+            border: 1px solid $green;
+            color: $white;
+            &:hover {
+              background: $white;
+              border-radius: 3px;
+              border: 1px solid $green;
+              color: $green;
+            }
+          }
+          .cancel{
+            background: $red;
+            border: 1px solid $red;
+            color: $white;
+            &:hover {
+              background: $white;
+              border: 1px solid $red;
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

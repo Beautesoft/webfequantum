@@ -1,0 +1,86 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.view-detail {
+  font-family: "Poppins";
+  padding: 1.65rem;
+  .inner-head {
+    line-height: 27px;
+    font-size: fontSize(30px);
+    margin: 0;
+    padding: 18px 0px;
+  }
+  .view-detail-box {
+    background: $white;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    width: 100%;
+    .product-detail-heading {
+      font-family: "Poppins";
+      color: #0d0d0d;
+      opacity: 0.8;
+    }
+    .product-detail-sub-text {
+      opacity: 0.8;
+      color: $gray-55;
+    }
+    .icon-change {
+      button {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+
+    // .view-detail-navlink {
+    //   .nav-tabs {
+    //     border: 0;
+    //     .nav-link {
+    //       cursor: pointer;
+    //       border: 0;
+    //     }
+    //   }
+    //   .filled-tabs {
+    //     a {
+    //       cursor: pointer;
+    //       &.active.nav-link {
+    //         background: #f0f8ff;
+    //         border-radius: 6px;
+    //         color: $primary-color;
+    //       }
+    //       &.nav-link {
+    //         background: transparent;
+    //         //   font-family: "Poppins", sans-serif;
+    //         height: 140px;
+    //         padding: 24px;
+    //         display: flex;
+    //         justify-content: center;
+    //         font-weight: 500;
+    //         color: #000000a1;
+    //         font-size: fontSize(18px);
+    //         line-height: 27px;
+    //         .nav-subtext {
+    //           font-size: fontSize(34px);
+    //           line-height: 50px;
+    //           font-weight: 500;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  .product-details {
+    font-size: fontSize(15px);
+    .product-detail-desc {
+      color: $black;
+      opacity: 0.8;
+    }
+    .product-detail-text {
+      color: $gray-55;
+      opacity: 0.8;
+    }
+    .product-detail-image {
+      img {
+        border-radius: 5px;
+        margin: 12px;
+      }
+    }
+  }
+}

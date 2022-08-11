@@ -1,0 +1,25 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.customer-stats {
+    .card{
+        border-radius: 10px;
+    }
+  .bar-chart-customer-stats {
+    padding: 20px;
+    .bar-chart-year {
+      .form-control {
+        border: 0;
+        width: 120px !important;
+      }
+    }
+    // canvas.chartjs-render-monitor {
+    //   height: 400px !important;
+    // }
+    #small-down-arrow {
+      font-size: 6px;
+      position: absolute;
+      top: 29px;
+      right: 5px;
+    }
+  }
+}

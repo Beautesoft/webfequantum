@@ -1,0 +1,199 @@
+@import "../../../../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.quickStats {
+  font-family: "Poppins";
+  .palette {
+    display: flex;
+    width: 100%;
+    max-width: 490px;
+    margin-top: 5px;
+    .last {
+      display: flex;
+      margin-left: 10.7cm;
+      .detail {
+        padding-left: 20px;
+        font-size: fontSize(14px);
+        font-family: "Poppins";
+        font-weight: 500;
+      }
+      .date-picker input {
+        height: 1cm;
+      }
+      .date {
+        margin-top: -0.5cm;
+        padding-left: 10px;
+      }
+    }
+    .color-detail {
+      display: flex;
+      .color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $primaryalt-color;
+        &.not-available {
+          background: $primary-color;
+        }
+      }
+      .detail {
+        padding-left: 20px;
+        font-size: fontSize(14px);
+        font-family: "Poppins";
+        font-weight: 500;
+      }
+      .date-picker input {
+        height: 1cm;
+      }
+      .date {
+        margin-top: -0.5cm;
+        padding-left: 10px;
+      }
+    }
+  }
+  .product-card {
+    padding-top: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 168px;
+    min-width: 168px;
+    min-height: 250px;
+    position: relative;
+    margin-right: 15px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.13);
+    .card-title {
+      min-height: 77px;
+    }
+    .customer-label {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 36px;
+      color: #000a14;
+      span {
+        &:nth-child(1) {
+          color: $primary-color;
+          font-size: fontSize(14px);
+        }
+      }
+    }
+    .label {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #000a14;
+      span {
+        &:nth-child(1) {
+          color: $primary-color;
+          font-size: fontSize(14px);
+        }
+      }
+    }
+    .label-title {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      color: #828588;
+      margin: 3px;
+    }
+    .label-header {
+      font-weight: normal;
+      font-size: 13.5px;
+      line-height: 35px;
+      color: #828588;
+      margin: 3px;
+    }
+    .title-border {
+      border-bottom: 1px solid #c4c4c4;
+    }
+
+    .count-label {
+      font-weight: 550;
+      font-size: 13px;
+      color: #828588;
+      padding: 5px;
+      margin: 5px;
+
+      span {
+        &:nth-child(1) {
+          color: $primaryalt-color;
+        }
+        &:nth-child(2) {
+          color: $primary-color;
+        }
+        &:nth-child(3) {
+          color: $primary-color !important;
+          font-size: fontsize(12px) !important;
+        }
+      }
+
+      .cart-img {
+        // border: 1px solid $primary-color;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        img {
+          display: flex;
+          margin: auto;
+          padding-top: 5px;
+        }
+      }
+      .cost {
+        font-size: fontSize(16px);
+        font-family: "Poppins";
+        line-height: 25px;
+        color: $primary-color;
+      }
+
+      .product-img {
+        position: relative;
+        max-width: 226px;
+        min-height: 180px;
+        img {
+          width: 100%;
+          min-height: 156px;
+          max-width: 170px;
+          object-fit: contain;
+          margin: auto;
+          display: flex;
+        }
+        .combo {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .btn {
+        position: absolute;
+        bottom: 0;
+        font-size: fontSize(16px);
+        line-height: 20px;
+        text-transform: none;
+        border-radius: 4px;
+        &:hover {
+          color: $white;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        padding: 0px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 100px) and (max-device-width: 1024px) {
+  .palette {
+    flex-direction: column;
+  }
+  .quickStats .palette .last {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-left: 0cm;
+  }
+  .quickStats .palette .last .date {
+    margin-top: -10px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,142 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.treatment-account {
+  .print {
+    button {
+      padding: 0;
+      width: 224px;
+      border: 1px solid $theme-color;
+      background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+      color: $primary-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $white;
+        color: $primary-color;
+      }
+    }
+  }
+  .action-bar {
+    justify-content: center;
+    .print {
+      button {
+        width: 224px;
+        border: 1px solid $theme-color;
+        background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+        color: $primary-color;
+        &:hover {
+          border: 1px solid $primary-color;
+          background: $white;
+          color: $primary-color;
+        }
+      }
+    }
+    .action {
+      button {
+        width: 224px;
+        background: $white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        &:hover {
+          border: 1px solid $primary-color;
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+    .cancel {
+      button {
+        width: 224px;
+        background: $white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        &:hover {
+          border: 1px solid $primary-color;
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+  .custom-border {
+    border-top: 1px solid #8080802e;
+  }
+  .update {
+    button {
+      width: 224px;
+    }
+  }
+  .undo {
+    button {
+      width: 224px;
+      border-radius: 0px;
+    }
+  }
+  .adjustment {
+    input {
+      margin-top: -10px;
+    }
+    .input-group {
+      input {
+        width: 187px;
+        height: 30px;
+        margin-top: 0px;
+        background: #f9f9f9;
+      }
+    }
+  }
+  .reason {
+    .input-group {
+      input {
+        width: 187px;
+        height: 30px;
+        background: #f9f9f9;
+      }
+    }
+  }
+  .remark {
+    .input-group {
+      textarea {
+        width: 393px;
+        min-height: 56px;
+        background: #f9f9f9;
+      }
+    }
+  }
+  .header {
+    background: $primary-color;
+    color: $white;
+    padding: 10px 0px;
+  }
+  .treatment-table {
+    border-bottom: 1px solid #8080802e;
+  }
+}
+
+.update-reverse {
+  .print {
+    button {
+      width: 224px;
+
+      background: $green;
+      color: $white;
+      &:hover {
+        border: 1px solid $green;
+        background: $white;
+        color: $green;
+      }
+    }
+  }
+  .cancel {
+    button {
+      width: 224px;
+      background: $white;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+}

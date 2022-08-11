@@ -1,0 +1,175 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.billing-section {
+  background: #fff;
+  .label-head {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .icon-download {
+    font-size: 20px;
+  }
+  .bill-status {
+    i {
+      color: $white;
+      background: $primary-color;
+      font-size: 9px;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  // .billing-table {
+  //   .table-container {
+  //     background: $white;
+  //     .maintable-content {
+  //       padding: 0 30px;
+  //       .table {
+  //         // border: 1px solid;
+  //         border-collapse: collapse;
+  //       }
+  //       .table th {
+  //         background: transparent;
+  //         color: $black;
+  //         // border-top: none;
+  //       }
+  //       .table td {
+  //         // border-top: none;
+  //         background: #e5e5e5;
+  //         // border-bottom: 15px solid $white;
+  //         border: 1px solid;
+  //       }
+  //     }
+  //   }
+  // }
+  .filter {
+    .date-picker {
+      input {
+        height: 35px;
+      }
+      .icon-calendar {
+        top: 5px;
+      }
+    }
+    .input-group {
+      input {
+        height: 35px;
+      }
+    }
+  }
+}
+.print-section {
+  font-family: Muli-Regular;
+  .btn {
+    max-width: 198px;
+    min-height: 50px;
+    text-transform: capitalize;
+  }
+  .btn.success-btn {
+    margin-left: auto;
+  }
+  .print-bill {
+    max-width: 100%;
+    margin: auto;
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: fontSize(16px);
+    }
+    .receipt {
+      padding: 20px;
+      margin-top: 30px;
+      .bill-head {
+        font-weight: bold;
+        font-size: fontSize(25px);
+        line-height: 31px;
+        margin: 0;
+      }
+      .receipt-detail {
+        font-size: fontSize(14px);
+        line-height: 26px;
+        color: #000000;
+      }
+      .bill-detail {
+        // max-width: 75%;
+        // margin: auto;
+        text-align: center;
+        h4 {
+          font-weight: bold;
+          font-size: fontSize(20px);
+          line-height: 25px;
+          margin: 15px 0;
+        }
+        // .table {
+        //   // border: 1px solid $primary-color;
+        //   box-sizing: border-box;
+        //   font-size: fontSize(14px);
+        //   line-height: 23px;
+        //   border-collapse: collapse;
+        //   color: #4f4f4f;
+        //   td {
+        //     // border-top: none;
+        //     text-align: left;
+        //     border: 1px solid;
+        //   }
+        //   tbody > tr:nth-child(even) > td {
+        //     // background-color: rgba(253, 199, 136, 0.33);
+        //   }
+        // }
+      }
+      .payment-detail {
+        .payment-header {
+          border-bottom: 2px solid;
+        }
+        .payment-footer {
+          // border-top: 2px solid;
+        }
+      }
+    }
+    .action-buttons {
+      .share {
+        color: $primary-color;
+        border-color: $primary-color;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .receipt {
+      .logo-header {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed;
+        height: 145px;
+        img {
+          width: 142px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .bill-header {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-bottom: 1px dashed;
+        border-top: 1px dashed;
+      }
+      .bill-detail {
+        .sub-total {
+          border-bottom: 1px dashed;
+          border-top: 1px dashed;
+          padding: 5px;
+        }
+        // .table-header{
+        //   border-bottom: 2px dotted;
+        //   border-top: 2px dotted;
+        // }
+      }
+    }
+  }
+}

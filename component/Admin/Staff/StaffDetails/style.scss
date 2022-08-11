@@ -1,0 +1,130 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.view-detail {
+  font-family: Muli-Medium;
+  padding: 1.65rem;
+  .btn {
+    height: 35px;
+  }
+  .input-container {
+    width: 100%;
+    max-width: 345px;
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    font-family: Muli-Regular;
+    // margin-bottom: 20px;
+    .category {
+      font-size: fontSize(18px);
+      line-height: 23px;
+    }
+    .sub-category {
+      font-weight: bold;
+      font-size: fontSize(18px);
+      line-height: 23px;
+    }
+    i {
+      font-size: fontSize(12px);
+      color: #222222;
+      opacity: 0.78;
+    }
+  }
+  .filled-tabs {
+    a.active.nav-link {
+      color: #000000;
+      border-radius: 0px;
+      border: 0;
+      border-bottom: 2px solid #000000;
+      opacity: 0.8;
+    }
+  }
+  .inner-head {
+    line-height: 27px;
+    font-size: fontSize(30px);
+    margin: 0;
+    padding: 18px 0px;
+  }
+  .view-detail-box {
+    background: $white;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    width: 100%;
+    .modal-avatar {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .staff-detail-heading {
+      font-family: Muli-SemiBold;
+      color: #0d0d0d;
+      opacity: 0.8;
+    }
+    .staff-detail-sub-text {
+      opacity: 0.8;
+      color: $gray-55;
+    }
+    .icon-change {
+      button {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  .staff-details {
+    font-size: fontSize(15px);
+    .staff-detail-desc {
+      color: $black;
+      opacity: 0.8;
+      font-weight: bold;
+    }
+    .staff-detail-text {
+      color: $gray-55;
+    }
+    .staff-detail-image {
+      img {
+        border-radius: 5px;
+        margin: 12px;
+      }
+    }
+    .attendence-update {
+      button {
+        width: 100px;
+        height: 30px;
+        padding: 1px;
+      }
+    }
+  }
+  .performance-detail {
+    .stats-card {
+      justify-content: space-evenly;
+      margin: 30px;
+      .card {
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 240px;
+        min-width: 240px;
+        min-height: 120px;
+        justify-content: center;
+        border-radius: 2px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        .count-label {
+          padding-left: 20px;
+          h2 {
+            margin: 0;
+            font-family: Muli-Bold;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $black;
+          }
+          p {
+            padding-left: 10px;
+            font-size: 14px;
+            white-space: nowrap;
+          }
+        }
+        .stats-icon {
+          font-size: fontSize(70px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.stock-memo-staff-listing {
+  .staff-listing {
+    .staff-list {
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+      P {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import "assets/scss/abstracts/abstracts-dir.scss";
+.inventoryList-section {
+  background: #fff;
+  // position: relative;
+  width: 1200px;
+  margin: 0 auto;
+
+  .label-head {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: fontSize(18px);
+    line-height: 35px;
+  }
+  .icon-download {
+    font-size: 20px;
+  }
+  .filter {
+    .date-picker {
+      input {
+        height: 35px;
+      }
+      .icon-calendar {
+        top: 5px;
+      }
+    }
+    .input-group {
+      input {
+        height: 35px;
+      }
+    }
+  }
+}

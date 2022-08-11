@@ -1,0 +1,176 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.payroll-section {
+  background: #fff;
+  .label-head {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: fontSize(22px);
+    line-height: 35px;
+  }
+  .icon-download {
+    font-size: 20px;
+  }
+  .bill-status {
+    i {
+      color: $white;
+      background: $primary-color;
+      font-size: 9px;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  .filter {
+    .date-picker {
+      input {
+        height: 35px;
+      }
+      .icon-calendar {
+        top: 5px;
+      }
+    }
+    .input-group {
+      input {
+        height: 35px;
+      }
+    }
+  }
+  .empSearch-block {
+    top: 0;
+    // left: 14cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 200px;
+    max-height: 500px;
+    // min-width: 750px;
+    // max-width: 750px;
+    min-width: 60%;
+    max-width: 80%;
+    overflow-y: auto;
+    z-index: 999;
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    margin: 55px 25px 5px 10px !important;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    .search {
+      width: 100%;
+      border: 1px solid #ced4da;
+      background: #f9f9f9;
+      margin-top: 10px;
+      height: 30px;
+    }
+    .table-header {
+      background-color: $temptablehead-color;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    .response-table {
+      height: 48vh;
+      overflow-y: auto;
+    }
+  }
+}
+.print-section {
+  font-family: Muli-Regular;
+  .btn {
+    max-width: 198px;
+    min-height: 50px;
+    text-transform: capitalize;
+  }
+  .btn.success-btn {
+    margin-left: auto;
+  }
+  .print-bill {
+    max-width: 100%;
+    margin: auto;
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: fontSize(16px);
+    }
+    .receipt {
+      padding: 20px;
+      margin-top: 30px;
+
+      .bill-head {
+        font-weight: bold;
+        font-size: fontSize(22px);
+        line-height: 31px;
+        margin: 0;
+      }
+      .receipt-detail {
+        font-size: fontSize(14px);
+        line-height: 26px;
+        color: #000000;
+      }
+      .bill-detail {
+        // max-width: 75%;
+        // margin: auto;
+        font-size: fontSize(13px);
+        text-align: center;
+        h4 {
+          font-weight: bold;
+          font-size: fontSize(18px);
+          line-height: 25px;
+          margin: 15px 0;
+        }
+      }
+      .payment-detail {
+        font-size: fontSize(14px);
+        .payment-header {
+          border-bottom: 2px solid;
+        }
+      }
+    }
+    .action-buttons {
+      .share {
+        color: $primary-color;
+        border-color: $primary-color;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .receipt {
+      .logo-header {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed;
+        height: 145px;
+        img {
+          width: 142px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .bill-header {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-bottom: 1px dashed;
+        border-top: 1px dashed;
+        font-size: fontSize(16px);
+      }
+      .bill-detail {
+        .sub-total {
+          border-bottom: 1px dashed;
+          border-top: 1px dashed;
+          padding: 5px;
+        }
+        .table-header {
+          font-size: fontSize(14px);
+          //   border-bottom: 2px dotted;
+          //   border-top: 2px dotted;
+        }
+      }
+    }
+  }
+}

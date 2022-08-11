@@ -1,0 +1,127 @@
+@import "../../../assets/scss/abstracts/abstracts-dir.scss";
+.profile-icon {
+  position: relative;
+}
+.profile-menu {
+  transition: all 0.5s ease-in-out;
+  display: none;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  .profile-menu-icon{
+      padding-right: 15px;
+  }
+  &.active {
+    display: block;
+    background: $white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px #909090;
+    position: absolute;
+    top: 73px;
+    right: 35px;
+    padding: 6px 15px;
+    opacity: 1;
+    z-index: 2;
+    visibility: visible;
+    &:hover {
+        background-color: $primary-color;
+        opacity: 0.7;
+        color: $white;
+    }
+  }
+}
+// .profile-menu {
+//   transition: all 0.5s ease-in-out;
+//   background: $white;
+//   border-radius: 7px;
+//   box-shadow: 0px 0px 4px #909090;
+//   transition: all 0.1s ease;
+//   position: absolute;
+//   right: 30;
+//   top: 55px;
+//   z-index: -1;
+//   opacity: 0;
+//   visibility: hidden;
+
+//   &.active {
+//     z-index: 2;
+//     opacity: 1;
+//     top: 73px;
+//     right: 30px;
+//     visibility: visible;
+//   }
+
+//   ul {
+//     list-style: none;
+//     padding: 0;
+//     width: 200px;
+
+//     li {
+//       width: 100%;
+//       text-align: center;
+//       transition: all 0.3s ease;
+//       font-size: 14px;
+//       a {
+//         padding: 0 15px;
+//         width: 100%;
+//         text-align: left;
+//         height: 40px;
+//         display: flex;
+//         align-items: center;
+//         &:hover {
+//           text-decoration: none;
+//         }
+//       }
+
+//       .profile-menu-desc {
+//         margin-left: 15px;
+//       }
+
+//       &:hover {
+//         background: $primary-color;
+//         opacity: 0.8;
+//         color: $white;
+
+//         // &:first-child {
+//         //   border-top-left-radius: 10px;
+//         //   border-top-right-radius: 10px;
+//         // }
+//         // &:last-child {
+//         //   border-bottom-left-radius: 10px;
+//         //   border-bottom-right-radius: 10px;
+//         // }
+//       }
+//     }
+//   }
+// }
+
+// .maintable-content .menu-action-icon {
+//   text-align: center;
+//   margin: 0 auto;
+//   width: auto;
+//   min-width: auto;
+//   border-radius: 50%;
+//   font-size: 11px;
+//   background-color: $primary-color;
+//   border: 0 !important;
+//   color: #000;
+// }
+
+// .profile-menu-icon {
+//   padding-bottom: 4px;
+// }
+.logoimage
+{
+  padding-top: 50px;
+  margin: auto;
+}
+.content
+{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.details
+{
+  padding-top: 30px;
+  padding-left: 30px;
+}
