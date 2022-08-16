@@ -1,0 +1,41 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.staffs-services-holder {
+  .staff-service {
+    .card {
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 440px;
+      justify-content: space-between;
+    }
+    .staffs,
+    .services {
+      font-size: fontSize(20px);
+      font-family: Muli-Regular;
+    }
+    .line-chart-year {
+      .form-control {
+        border: 0;
+        padding: 0px;
+        width: 120px !important;
+        height: 22px;
+      }
+      #small-down-arrow {
+        top: 9px;
+      }
+    }
+    // canvas.chartjs-render-monitor {
+    //   height: 240px !important;
+    // }
+  }
+  .staff-service-label{
+      p{
+          font-size: fonmtSize(16px);
+          font-family: Muli-Regular;
+        }
+        h1{
+            margin: 0;
+            font-family: Muli-Bold;
+      }
+  }
+}

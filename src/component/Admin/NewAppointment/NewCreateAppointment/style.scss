@@ -1,0 +1,721 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.select-treatment-appointment {
+  .step-view.step-1::before {
+    max-width: 23%;
+  }
+  .step-view::before {
+    left: 175px !important;
+    max-width: 50% !important;
+  }
+}
+.create-appointment {
+  .date-picker .icon-calendar {
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+    top: 0px;
+  }
+  .timeline-view::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin-left: 10px;
+    top: 8px;
+    max-width: 50%;
+    border: 2px dashed rgba(0, 0, 0, 0.44);
+    border-top: none;
+  }
+  // .select-treatment-timeline:before {
+  //   position: absolute;
+  //   content: '';
+  //   width: 100%;
+  //   margin-left: 10px;
+  //   top: 8px;
+  //   max-width: 50%;
+  //   border: 2px dashed rgba(0, 0, 0, 0.44);
+  //   border-top: none;
+  // }
+  .step-view::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid;
+    width: 100%;
+    top: 8px;
+    left: 114px;
+    max-width: 0%;
+    border: 2px solid $primary-color;
+    border-top: none;
+    z-index: 2;
+  }
+
+  .timeline-view {
+    .visited {
+      position: relative;
+      top: -3px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      padding: 3px;
+      margin: auto;
+      z-index: 3;
+      background: $white;
+    }
+    .timeline {
+      position: relative;
+      background: #e5e5e5;
+      z-index: 2;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $primary-color;
+      margin: auto;
+      border-radius: 50%;
+      &.active {
+        background: $primary-color;
+      }
+    }
+  }
+  input,
+  .form-control {
+    width: 100%;
+    background: #f9f9f9;
+    border: 0;
+    height: 30px;
+    padding: 13px 20px;
+  }
+  .customer-label {
+    font-size: fontSize(16px);
+    line-height: 20px;
+    color: $black;
+    // background: rgba(237, 125, 49, 0.15);
+    min-height: 43px;
+    display: flex;
+    // padding-left: 15px;
+    align-items: center;
+    font-family: Muli-SemiBold;
+    margin-bottom: 20px;
+  }
+  .common-label-text {
+    font-size: fontSize(14px);
+    line-height: 18px;
+    color: $black;
+    font-family: Muli-SemiBold;
+    padding-bottom: 10px;
+  }
+  .status {
+    font-size: fontSize(12px);
+    color: $red;
+    font-family: Muli-SemiBold;
+  }
+  .date-picker-wrapper .icon {
+    top: 8px;
+    right: 10px;
+    font-size: fontSize(15px);
+    color: #888888;
+  }
+  .time-form {
+    position: relative;
+    img {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+    }
+  }
+  .treatment-section {
+    background: $white;
+    padding: 20px;
+    .select-list {
+      .selected-header {
+        background-color: $temptablehead-color;
+        border-radius: 4px;
+        padding: 5px;
+      }
+    }
+    .treatment-label {
+      font-size: fontSize(18px);
+      font-family: Muli-SemiBold;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .treatment-type {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 90%;
+      margin: auto;
+      .treatment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .treatment-img {
+        width: 100%;
+        max-width: 161px;
+        min-height: 160px;
+        object-fit: cover;
+      }
+      .treatment-name {
+        font-size: fontSize(14px);
+        font-family: Muli-SemiBold;
+        line-height: 18px;
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #222222;
+      }
+    }
+    .treatment-detail {
+      padding: 25px 0 0 25px;
+      .treatment-img {
+        width: 100%;
+      }
+      .headline {
+        font-size: 14px;
+        line-height: 27px;
+      }
+      .detail {
+        font-size: 14px;
+        line-height: 27px;
+        color: #888888;
+      }
+      input {
+        font-size: 10px;
+        color: #888888;
+        width: 60%;
+      }
+      .staff {
+        img {
+          width: 87px !important;
+          margin-top: 10px;
+        }
+      }
+      .product-used {
+        svg {
+          position: absolute;
+          margin-top: 5px;
+          margin-left: -30px;
+        }
+      }
+      .confirm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .treatment {
+          width: 224px;
+          height: 40px;
+          button {
+            background: $green;
+            border: 1px solid $green;
+            &:hover {
+              background: $white;
+              color: $green;
+            }
+          }
+        }
+      }
+
+      .select-treatment {
+        .input-group {
+          width: 275px;
+          display: flex;
+          // height: 30px;
+          svg {
+            margin-left: 15px;
+          }
+          .input-select {
+            width: 224px;
+          }
+          .form-control {
+            padding: 0 15px;
+          }
+          .select .select-icon {
+            top: 14px;
+            right: 14px;
+          }
+          textarea {
+            width: 224px;
+            background: #f5f5f5c2;
+            border: none;
+          }
+        }
+        .selected {
+          height: 127px;
+          background: rgba(237, 125, 49, 0.05);
+          .header-detail {
+            padding: 15px;
+            .title {
+              line-height: 25px;
+            }
+            .subtitle {
+              line-height: 30px;
+              color: #424242;
+              opacity: 0.8;
+            }
+          }
+          .treatment-img {
+            width: 137px;
+            height: 127px;
+          }
+        }
+      }
+      .booked-appointment {
+        .customer-title {
+          background-color: #f7c4c491;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .availability {
+    background: white;
+    left: 0;
+    height: 90vh;
+    overflow-y: auto;
+    margin-top: -23px;
+    z-index: 1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    .side-menus {
+      .detail {
+        p {
+          line-height: 20px;
+        }
+      }
+      .available-time {
+        color: #676767;
+      }
+    }
+    .heading {
+      font-size: 18px;
+      color: #ffc55c;
+      text-align: center;
+      border-bottom: 3px solid #ffc55c;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+  }
+  .appointment-box {
+    border-left: 2px solid #ffb26b;
+  }
+  .appointment-col {
+    margin-top: -23px;
+    background-color: $white;
+    height: 100%;
+    .appointment {
+      // margin: 20px 100px 20px 100px;
+      // margin: 20px 173px 20px 114px;
+      .stepper {
+        margin: 26px;
+        padding: 17px;
+        background: $white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 117px;
+        .step-view {
+          position: relative;
+        }
+      }
+      .appointment-holder {
+        .form-group {
+          .input-group {
+            .select {
+              .select-icon {
+                top: 14px;
+                right: 8px;
+              }
+            }
+          }
+        }
+        .customer-appointment {
+          .create {
+            justify-content: center;
+            width: 400px;
+            margin: auto;
+            .multiple-customer {
+              border-radius: 3px;
+              height: unset;
+              text-transform: unset;
+              width: 180px;
+            }
+            .confirm {
+              height: unset;
+              text-transform: unset;
+              width: 180px;
+            }
+          }
+          .create-appointment {
+            button {
+              width: 224px;
+            }
+          }
+          .customer-name {
+            padding: 0px !important;
+            height: 30px;
+          }
+          .select .select-icon {
+            top: 14px;
+          }
+        }
+        .booked-appointment {
+          .customer-title {
+            background: rgba(237, 125, 49, 0.15);
+            padding: 5px;
+          }
+          .selected {
+            background: rgba(237, 125, 49, 0.05);
+          }
+          .confirm {
+            .multiple-customer {
+              border-radius: unset;
+              height: unset;
+            }
+            .treatment {
+              button {
+                height: unset;
+              }
+            }
+          }
+          .form-control {
+            padding: 0 15px;
+          }
+          .select .select-icon {
+            top: 14px;
+          }
+          input {
+            width: unset;
+          }
+        }
+        .book-treatment {
+          .selected {
+            min-height: 87px;
+            background: rgba(237, 125, 49, 0.05);
+            padding: 10px;
+            .title {
+              color: #222222;
+
+              opacity: 0.8;
+            }
+            .subtitle {
+              color: #424242;
+
+              opacity: 0.8;
+            }
+            .detail {
+              color: #929292;
+
+              opacity: 0.8;
+            }
+            .header-detail {
+              color: #222222;
+              p {
+                color: #222222;
+              }
+            }
+          }
+          .confirm {
+            display: flex;
+            justify-content: center;
+            .confirm-booking {
+              width: 224px;
+              height: 40px;
+              button {
+                border: 1px solid $green;
+                background-color: $green;
+                &:hover {
+                  border: 1px solid $green;
+                  color: $green;
+                  background-color: $white;
+                }
+              }
+            }
+          }
+        }
+        .view-all-appointment {
+          .treatment {
+            width: 100px;
+            position: fixed;
+            bottom: 15px;
+            margin-left: -50px;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-holder {
+    position: fixed;
+    top: 100px;
+    .confirm-booking {
+      margin: auto;
+      width: 200px;
+      height: 40px;
+      button {
+        border: 1px solid $green;
+        background-color: $green;
+        &:hover {
+          border: 1px solid $green;
+          color: $green;
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .select-list {
+    .selected {
+      // background-color: #faabab4f;
+      .select {
+        .form-control {
+          padding: 0px !important;
+        }
+        .select-icon {
+          top: 14px;
+          right: 8px;
+        }
+      }
+      .form-control {
+        .select-icon {
+          top: 13px;
+        }
+      }
+      .customer-name,
+      .form-control {
+        height: 30px;
+      }
+      .multi-select {
+        .css-1hwfws3 {
+          overflow-y: auto;
+          height: 43px;
+        }
+      }
+    }
+    .selected-header {
+      .row {
+        background-color: $temptablehead-color;
+        border-radius: 4px;
+        padding: 5px;
+      }
+    }
+  }
+  .confirm-selected {
+    display: flex;
+    justify-content: center;
+    .treatment {
+      width: 250px;
+    }
+  }
+}
+.select-time {
+  width: 100%;
+  padding: 20px;
+  max-width: 360px;
+  min-width: 360px;
+  min-height: 265px;
+  background-color: $white;
+  display: none;
+  z-index: 5;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  &.active {
+    display: block;
+  }
+  .label {
+    font-size: fontSize(20px);
+    line-height: 25px;
+    font-family: Muli-Bold;
+  }
+  .time-zone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .time {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      font-size: fontSize(16px);
+      line-height: 25px;
+      font-family: Muli-Regular;
+      box-shadow: 0px 0px 10px rgba(174, 174, 174, 0.25);
+      width: 100%;
+      max-width: 100px;
+      min-height: 42px;
+      color: #000;
+      &.active {
+        background: rgba(255, 151, 80, 0.35);
+      }
+      &.not-available {
+        color: $red;
+      }
+    }
+  }
+}
+
+.multiple .customer-label {
+  background-color: #f7c4c491;
+}
+
+.select-category {
+  .modal-body {
+    .search {
+      width: 100%;
+      border: 1px solid #ced4da;
+      background: #f9f9f9;
+      margin-top: 10px;
+      height: 30px;
+    }
+    .table-header {
+      background-color: $temptablehead-color;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    .response-table {
+      height: 45vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.treatment-done {
+  .action-bar {
+    .confirm,
+    .clear-line,
+    .clear-all {
+      width: 124px;
+      height: 40px;
+    }
+    .confirm {
+      background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+      border: 1px solid $theme-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $white;
+        color: $primary-color;
+      }
+    }
+  }
+  .input-group {
+    input {
+      width: 180px;
+      height: 30px;
+      background: #f9f9f9;
+      border: none;
+    }
+    .select {
+      width: 180px !important;
+      .select-form-control {
+        height: 30px;
+        background: #f9f9f9;
+      }
+      .select-icon {
+        top: 13px;
+      }
+    }
+  }
+  .staff-listing {
+    img {
+      max-width: 62px;
+      max-height: 62px;
+      border-radius: 50%;
+    }
+    .forward-button,
+    .back-button {
+      width: 30px;
+      height: 82px;
+      padding: 28px 10px;
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+}
+
+.transaction-discount-update {
+  .input-group {
+    input {
+      width: 180px;
+      height: 30px;
+      background: #f9f9f9;
+      border: none;
+    }
+    .select {
+      width: 180px !important;
+      .select-form-control {
+        height: 30px;
+        background: #f9f9f9;
+      }
+      .select-icon {
+        top: 13px;
+      }
+    }
+  }
+  .discount-section {
+    .apply {
+      width: 180px;
+      background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+      border: 1px solid $theme-color;
+      color: $green;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $white;
+        color: $primary-color;
+      }
+    }
+    .confirm {
+      width: 180px;
+      background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+      border: 1px solid $theme-color;
+      color: $primary-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $white;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.date-picker-wrapper .icon {
+  position: absolute;
+  top: 5px !important;
+  right: 25px;
+  font-size: 25px;
+}
+
+.appointment-form {
+  .customerSearch-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-height: 500px;
+    // min-width: 800px;
+    // max-width: 900px;
+    min-width: 60%;
+    max-width: 80%;
+    overflow-y: auto;
+    z-index: 999;
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    margin: 70px 25px 5px 10px !important;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    .search {
+      width: 100%;
+      border: 1px solid #ced4da;
+      background: #f9f9f9;
+      margin-top: 10px;
+      height: 30px;
+    }
+    .table-header {
+      background-color: $temptablehead-color;
+      border-radius: 4px;
+      padding: 3px;
+    }
+    .response-table {
+      overflow-y: auto;
+    }
+  }
+}

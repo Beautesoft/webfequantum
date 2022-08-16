@@ -1,0 +1,45 @@
+@import '../abstracts/abstracts-dir.scss';
+
+.auth-layout {
+  height: calc(100vh);
+  .auth-layout-bg .page-wrapper {
+    background-color: $primary-color;
+    object-fit: cover;
+    &::before {
+      content: '';
+      // background-color: rgba($color: #000000, $alpha: 0.35);
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+}
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  .login-heading {
+    font-family: Muli-Regular;
+    font-size: fontSize(28px);
+    line-height: 35px;
+    color: $gray-3D;
+  }
+  .form-control {
+    height: 45px;
+  }
+  .select .select-icon {
+    top: 22px
+  }
+  .checkbox{
+    .custom-checkbox {
+      .checkbox-tick {
+        color: $white;
+      }
+    }
+  }
+  #loginBtn {
+    font-size: 14px;
+  }
+}

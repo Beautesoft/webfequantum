@@ -1,0 +1,55 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.invoice-stats {
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 320px;
+    max-height: 320px;
+  }
+  .target-container {
+    height: 100%;
+    min-height: 150px;
+    max-height: 150px;
+  }
+  .target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-family: Muli-Medium;
+      font-size: fontSize(20px);
+      padding-left: 30px;
+    }
+    h2 {
+      color: #ff0000;
+      align-items: center;
+      font-family: Muli-Bold;
+      padding-left: 30px;
+    }
+  }
+ 
+  .circle-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg.CircularProgressbar {
+      width: 110px;
+      height: 110px;
+    }
+    .CircularProgressbar-text {
+      font-family: Muli-Bold;
+    }
+  }
+  .paid-invoice {
+    font-size: fontSize(20px);
+    text-align: left;
+    padding-left: 30px;
+    line-height: 29px;
+  }
+  .paid-count {
+    color: #ff0000;
+    font-family: Muli-Bold;
+  }
+}

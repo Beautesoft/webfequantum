@@ -1,0 +1,35 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+.treatment-account {
+  .print {
+    button {
+      padding: 0;
+      width: 224px;
+      border: 1px solid $theme-color;
+      background: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+      color: $primary-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background: $white;
+        color: $primary-color;
+      }
+    }
+  }
+  .back {
+    width: 224px;
+    padding: 0;
+  }
+  #small-down-arrow {
+    top: 17px;
+  }
+}
+.credit-note-update {
+  .input-group {
+    input {
+      border: none;
+      background: #e4e4e4cf;
+    }
+  }
+}
+.justify-center {
+  justify-content: center;
+}

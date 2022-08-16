@@ -1,0 +1,42 @@
+@import "../../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.sales-stats {
+  .tab-view {
+    a.nav-link {
+      opacity: 0.5;
+      font-size: fontSize(25px);
+      font-family: Muli-SemiBold;
+    }
+    a.active.nav-link {
+      opacity: 1;
+      border: none;
+      color: $primary-color;
+      font-size: fontSize(25px);
+      font-family: Muli-SemiBold;
+    }
+  }
+  .products {
+    padding: 20px 60px 20px 20px;
+    background: $white;
+    // canvas.chartjs-render-monitor {
+    //   height: 440px !important;
+    //   width: 1390px !important;
+    // }
+    .product-income {
+      font-size: fontSize(20px);
+      font-family: Muli-Regular;
+    }
+    .date {
+      .form-control {
+        height: 32px;
+        border: none;
+        max-width: 150px;
+      }
+      .icon {
+        top: 6px;
+        right: 6px;
+        font-size: 19px;
+      }
+    }
+  }
+}

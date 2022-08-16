@@ -1,0 +1,12 @@
+#editProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  #profileWrapper {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+}

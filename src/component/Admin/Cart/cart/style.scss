@@ -1,0 +1,228 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.payment-date {
+  .date-picker input {
+    height: 1cm;
+    width: 4cm;
+  }
+  .date-picker .icon-calendar {
+    top: 6px;
+  }
+}
+.make-payment {
+  .btn {
+    max-width: 198px;
+    height: 50px;
+    margin: auto;
+  }
+}
+.make-payment-section {
+  background: $white;
+  min-height: 489px;
+  h4 {
+    font-family: "Poppins";
+    font-size: fontSize(16px);
+  }
+  .payment,
+  .subtotal {
+    border: 1px solid $primary-color;
+  }
+  .payment-list {
+    border: 1px solid $primary-color;
+    height: 280px;
+    overflow-y: auto;
+    .credit-card {
+      width: 560px;
+      z-index: 9;
+      position: relative;
+    }
+  }
+}
+.paymentGroup {
+  .payment-item:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    border: 0.8px grey;
+    border-radius: 5%;
+  }
+}
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid $primary-color;
+  background-color: transparent;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: $primaryalt-color;
+}
+
+.input-group {
+  .select .select-icon {
+    top: 16px;
+  }
+}
+
+.transaction-discount-update {
+  .title {
+    font-weight: 700;
+  }
+  .payment-detail {
+    border-top: 1px solid $primary-color;
+    p {
+      line-height: 30px;
+    }
+    .reset-button {
+      button {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        padding: 0px;
+        bottom: -15px;
+        left: -15px;
+      }
+    }
+  }
+}
+
+.treatment-done {
+  .staff-listing {
+    .staff-list {
+      // width: 62px;
+      // height: 62px;
+      img {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+      }
+      P {
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+  .discount {
+    textarea {
+      width: 100%;
+      background: #f9f9f9;
+      border: none;
+    }
+    .apply {
+      justify-content: center;
+      .confirm {
+        width: 100px;
+        height: 30px;
+        padding: 0px;
+        background: $theme-color;
+        color: $primary-color;
+        &:hover {
+          border: 1px solid $primary-color;
+          background: #f9f9f9;
+          color: $primary-color;
+        }
+      }
+      .reset {
+        width: 100px;
+        height: 30px;
+        padding: 0px;
+        background: $white;
+        color: $primary-color;
+        &:hover {
+          border: 1px solid $primary-color;
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+  .input-group {
+    .special {
+      background: #fbfe8f;
+    }
+  }
+  .display-none {
+    display: none !important;
+  }
+}
+
+.customer-select {
+  .modal-body {
+    .confirm {
+      width: 100px;
+      height: 30px;
+      padding: 0px;
+    }
+  }
+}
+
+.retail-price-modal {
+  .modal-body {
+    .addtocart {
+      button {
+        height: 30px;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+.stock-memo-staff-listing .staff-listing .staff-list img {
+  width: 55px !important;
+  height: 55px !important;
+  border-radius: 50%;
+}
+.staff {
+  width: 29.2cm;
+}
+
+.salesstaff-background {
+  background-color: #ed91d459;
+}
+.workstaff-background {
+  background-color: #a0e5f759;
+}
+.success-msg .right {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid green;
+  color: green;
+}
+.success-msg .title {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.success-msg {
+  text-align: center;
+  padding-top: 50px;
+}

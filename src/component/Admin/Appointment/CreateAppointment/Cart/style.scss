@@ -1,0 +1,148 @@
+@import 'assets/scss/abstracts/abstracts-dir.scss';
+
+.cart-holder {
+    background: $white;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    max-width: 17%;
+    top: 100px;
+    left: 82%;
+    height: calc(100vh - 100px);
+    transition: 0.4s ease-in-out;
+    z-index: 3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+    &.open {
+      transition: 0.4s ease-in-out;
+      left: 0;
+      max-width: 100%;
+      position: relative;
+      overflow: auto;
+      top: 0;
+      .cart-head {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .cart-head {
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+      p {
+        padding-left: 20px;
+        font-family: Muli-SemiBold;
+        font-size: fontSize(20px);
+        line-height: 25px;
+      }
+    }
+    .item-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-color;
+      height: calc(100vh - 255px);
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    }
+    .item-list-detail{
+      width: 100%;
+      color: unset;
+      // display: unset;
+      .list{
+        .detail {
+          background: rgba(237, 125, 49, 0.05);
+          padding: 10px;
+          .treatment{
+            .title{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 25px;
+            }
+            .sub-title{
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 18px;
+              color: #424242;
+              opacity: 0.8;
+            }
+            .time{
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 13px;
+              color: #929292;
+              opacity: 0.8;
+            }
+          }
+          .cost{
+            font-size: 25px;
+            font-weight: 600;
+            padding-top: 15px;
+            text-align: center;
+          }
+          .quantity{
+            font-size: 25px;
+            font-weight: 600;
+            padding-top: 15px;
+            text-align: center;
+          }
+          .booking{
+            font-size: 25px;
+            font-weight: 600;
+            padding-top: 15px;
+            text-align: center;
+          }
+          .action {
+            padding-top: 8px;
+            .icon-more {
+              background: antiquewhite;
+              border-radius: 42px;
+              height: 42px;
+              width: 42px;
+              padding: 19px 13px;
+            }
+          }
+        }
+        
+      }
+     .billable-amount{
+      background: rgba(237, 125, 49, 0.05);
+      padding: 20px;
+      margin-top: 39px;
+      font-size: 20px;
+      line-height: 40px;
+     }
+     .right-total {
+       font-size: 20px;
+       color: unset;
+       margin-top: 80px;
+       .amount{
+         font-weight: 600;
+       }
+     }
+    }
+    .total {
+      display: flex;
+      width: 100%;
+      max-width: 180px;
+      margin: auto;
+      justify-content: space-between;
+      font-size: fontSize(20px);
+      font-family: Muli-SemiBold;
+      color: $primary-color;
+    }
+    .check-out {
+      padding-top: 20px;
+      text-align: center;
+      font-size: fontSize(18px);
+      font-family: Muli-Regular;
+      color: $primary-color;
+    }
+  }

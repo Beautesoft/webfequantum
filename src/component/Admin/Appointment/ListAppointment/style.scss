@@ -1,0 +1,20 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.salon-appointment{
+    display: flex;
+    align-items: center;
+    padding: 16px 0px 20px;
+    .form-control{
+        height: 45px;
+        border-radius: 5px;
+    }
+    #small-down-arrow {
+        font-size: 5px;
+        position: absolute;
+        top: 21px;
+        right: 16px;
+      }
+    .salon-name{
+
+    }
+}

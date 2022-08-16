@@ -1,0 +1,39 @@
+@import 'assets/scss/abstracts/abstracts-dir.scss';
+
+.customer-month-stats {
+    .card{
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+        min-height: 320px;
+        max-height: 320px;
+    }
+  .form-control {
+    height: 20px;
+    border: 0;
+    &:focus{
+        border: 0;
+    }
+  }
+  .label{
+      font-size: fontSize(16px);
+      font-family: Muli-Regular;
+  }
+  .date {
+      width: 100%;
+      max-width: 135px;
+    .icon {
+      font-size: 15px;
+      top: 5px;
+      right: 7px;
+    }
+  }
+  svg.highcharts-root{
+    height: 100%;
+    max-height: 245px;
+    min-height: 245px;
+  }
+  text.highcharts-title,text.highcharts-axis-title,text.highcharts-credits{
+    display: none;
+  }
+}

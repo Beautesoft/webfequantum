@@ -1,0 +1,92 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.treatment-done-new {
+  background-color: #ffffff;
+  .header {
+    .select-year {
+      .name {
+        width: 120px;
+      }
+      .input-group {
+        width: 100px;
+      }
+    }
+    .menus {
+      width: 148px;
+      background: #b3b3b3;
+      padding: 5px 10px;
+      text-align: center;
+      color: #000000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .active {
+      background: $primary-color !important;
+      color: #ffffff !important;
+    }
+  }
+  .cart-border {
+    border: 1px solid black;
+  }
+  .form-check {
+    margin-top: -15px;
+  }
+  .treatment-done {
+    .date-picker .icon-calendar {
+      top: 0px;
+    }
+  }
+}
+.transaction-done-reversal {
+  .treatment-done {
+    .adjustment {
+      .select {
+        .select-form-control {
+          height: 100%;
+        }
+        .select-icon {
+          top: 11px;
+        }
+      }
+    }
+  }
+}
+
+.void-checkout-complete {
+  .modal-body {
+    .row {
+      .print {
+        width: 132px;
+        border: 1px solid $theme-color !important;
+        background: linear-gradient(
+          91.15deg,
+          #a0e5f7 0.45%,
+          #ed91d4 100%
+        ) !important;
+        &:hover {
+          color: $primary-color !important;
+          background: $white !important;
+          color: $primary-color;
+        }
+      }
+
+      .share {
+        width: 132px;
+        border: 1px solid $theme-color !important;
+        background: linear-gradient(
+          91.15deg,
+          #a0e5f7 0.45%,
+          #ed91d4 100%
+        ) !important;
+        &:hover {
+          color: $primary-color !important;
+          background: $white !important;
+          border: $primary-color !important;
+        }
+      }
+      .cancel {
+        width: 132px;
+      }
+    }
+  }
+}

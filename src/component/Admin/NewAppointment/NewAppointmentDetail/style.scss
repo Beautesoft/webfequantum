@@ -1,0 +1,126 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.appointment-detail {
+  .re-direct {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    p {
+      padding-left: 20px;
+      font-family: Muli-Regular;
+      font-weight: bold;
+      font-size: fontSize(14px);
+      line-height: 18px;
+    }
+  }
+  .head-label {
+    font-size: fontSize(18px);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  .appointment {
+    // box-shadow: 0px 4px 4px rgba(194, 194, 194, 0.25);
+    table {
+      background: $white;
+      margin: 20px 0;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      th,
+      td {
+        border: none;
+        font-size: fontSize(16px);
+        font-family: Muli-Regular;
+      }
+      .first-value {
+        width: 15%;
+      }
+      .appointment-status {
+        color: $red;
+        font-weight: 600;
+      }
+      thead {
+        box-shadow: 0px 4px 4px rgba(194, 194, 194, 0.25);
+      }
+      .input-group .select .select-icon {
+        top: 16px;
+        right: 5px;
+        font-size: 5px;
+      }
+    }
+  }
+  .status {
+    display: flex;
+    font-size: fontSize(16px);
+    font-family: Muli-Regular;
+    .status-detail {
+      color: #888888;
+      line-height: 20px;
+    }
+    .status-label {
+      color: $black;
+      width: 100%;
+      padding-bottom: 15px;
+      line-height: 20px;
+      max-width: 150px;
+    }
+  }
+  .detail-card {
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: Muli-Regular;
+    .detail-user-profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px 20px;
+      .profile-avatar {
+        justify-content: center;
+        display: flex;
+        img {
+          height: 107px;
+          max-width: 107px;
+          border-radius: 50%;
+        }
+      }
+      .user-name {
+        font-weight: 600;
+        font-size: fontSize(18px);
+        color: $primary-color;
+        line-height: 23px;
+        padding: 15px;
+      }
+      .btn {
+        background: rgba(237, 125, 49, 0.2);
+      }
+    }
+    .user-detail {
+      padding: 0 20px;
+      .detail {
+        padding-bottom: 20px;
+        align-items: center;
+        // justify-content: space-evenly;
+        .status-label {
+          font-weight: 600;
+          font-size: fontSize(12px);
+          line-height: 15px;
+          text-align: right;
+          color: #7a7a7a;
+          width: 100%;
+          max-width: 55px;
+        }
+        .status-detail {
+          font-weight: 600;
+          font-size: fontSize(12px);
+          line-height: 15px;
+          color: $black;
+          padding-left: 20px;
+        }
+        .spliter {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

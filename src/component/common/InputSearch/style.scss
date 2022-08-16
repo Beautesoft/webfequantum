@@ -1,0 +1,87 @@
+@import "../../../assets/scss/abstracts/abstracts-dir.scss";
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root("::-webkit-input-placeholder") {
+    @content;
+  }
+
+  @include optional-at-root(":-moz-placeholder") {
+    @content;
+  }
+
+  @include optional-at-root("::-moz-placeholder") {
+    @content;
+  }
+
+  @include optional-at-root(":-ms-input-placeholder") {
+    @content;
+  }
+}
+
+// .search-box {
+//   i.icon-searchIcon.input-icon {
+//     color: $primary-color;
+//   }
+//   input {
+//     border: 1px solid #c7c7c7;
+//     box-sizing: border-box;
+//     width: 100%;
+//     // max-width: 300px;
+//     padding-right: 50px;
+//     height: 45px !important;
+//     background-color: $white;
+//     color: $black;
+//     box-shadow: none;
+//     &:focus {
+//       background-color: $white;
+//       border: 1px solid #c7c7c7;
+//       color: $black;
+//       box-shadow: none;
+//     }
+//     @include placeholder {
+//       color: $black;
+//       opacity: 0.5;
+//     }
+//   }
+// }
+
+.search-box {
+  position: relative;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  background-color: $white;
+  input {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    // padding-right: 50px;
+    height: 35px;
+    color: $black;
+    border: none;
+    background-color: $white;
+    box-shadow: none;
+    &:focus {
+      background-color: $white;
+      border: none;
+      color: $black;
+      box-shadow: none;
+    }
+    @include placeholder {
+      color: $black;
+      opacity: 0.5;
+    }
+  }
+  .search-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: $primary-color;
+    font-size: fontSize(16px);
+  }
+}

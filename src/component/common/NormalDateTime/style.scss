@@ -1,0 +1,22 @@
+.date-picker {
+  width: 100%;
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: 150px !important;
+    margin: unset !important;
+  }
+  .react-datepicker__time-container {
+    width: 150px !important;
+  }
+  input {
+    background: #f9f9f9;
+    border: 0.25px solid #c0c0c0;
+    width: 100%;
+    padding: 15px;
+  }
+  .icon-calendar{
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+    top: 18px;
+  }
+}
