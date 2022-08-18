@@ -1,0 +1,14 @@
+[
+  { "status": "not-available", "label": "9.00 AM", "value": "09:00" },
+  { "status": "", "label": "10.00 AM", "value": "10:00" },
+  { "status": "", "label": "11.00 AM", "value": "11:00" },
+  { "status": "", "label": "12.00 PM", "value": "12:00" },
+  { "status": "", "label": "1.00 PM", "value": "13:00" },
+  { "status": "", "label": "2.00 PM", "value": "14:00" },
+  { "status": "not-available", "label": "3.00 PM", "value": "15:00" },
+  { "status": "", "label": "4.00 PM", "value": "16:00" },
+  { "status": "not-available", "label": "5.00 PM", "value": "17:00" },
+  { "status": "", "label": "6.00 PM", "value": "18:00" },
+  { "status": "", "label": "7.00 PM", "value": "19:00" },
+  { "status": "", "label": "8.00 PM", "value": "20:00" }
+]

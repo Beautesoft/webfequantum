@@ -1,0 +1,184 @@
+@import "assets/scss/abstracts/abstracts-dir.scss";
+
+.payment-section {
+  font-family: "Poppins";
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: fontSize(16px);
+    max-width: 90%;
+    margin: auto;
+  }
+  .product-list {
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 25px;
+    padding: 15px;
+    .product-img {
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      text-align: left;
+      width: 100%;
+      max-width: 200px;
+      .product-name {
+        max-width: 190px;
+        font-weight: 600;
+        font-size: fontSize(18px);
+        color: $black;
+      }
+      .product-category {
+        padding-top: 10px;
+        font-size: fontSize(16px);
+        color: $primary-color;
+      }
+    }
+    .product-color {
+      display: flex;
+      align-items: center;
+      max-width: 100px;
+      justify-content: center;
+      width: 100%;
+      .color-label {
+        font-size: fontSize(13px);
+        color: $primary-color;
+        padding-right: 10px;
+      }
+    }
+    .size-selector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 150px;
+      .size-label {
+        font-size: fontSize(13px);
+        color: $primary-color;
+        padding-right: 10px;
+      }
+      select {
+        width: 50px;
+        height: 25px;
+        padding: 0 5px;
+        border: none;
+        background: #f0f0f0;
+        -webkit-appearance: listbox;
+      }
+    }
+    .qty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 80px;
+    }
+    .cost {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100px;
+      font-size: fontSize(16px);
+      color: $primary-color;
+    }
+    .remove-icon {
+      width: 100%;
+      max-width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: fontSize(13px);
+      }
+    }
+  }
+  .cart-total {
+    min-height: 489px;
+    background: $white;
+    padding: 20px;
+    .cart-price {
+      padding: 0 20px;
+      font-family: Muli-SemiBold;
+      font-size: fontSize(20px);
+      line-height: 25px;
+      height: calc(489px - 75px);
+    }
+    .bill-amount {
+      font-weight: bold;
+      font-size: fontSize(20px);
+      line-height: 25px;
+      color: $primary-color;
+    }
+  }
+  .make-payment {
+    .btn {
+      max-width: 198px;
+      height: 50px;
+      margin: auto;
+    }
+  }
+  .make-payment-section {
+    background: $white;
+    padding: 5px;
+    min-height: 489px;
+    h4 {
+      font-family: "Poppins";
+      font-size: fontSize(16px);
+    }
+  }
+  .radio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+  }
+
+  .radio-item input[type="radio"] {
+    display: none;
+  }
+
+  .radio-item label {
+    color: #666;
+    font-weight: normal;
+  }
+
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid #ffa500;
+    background-color: transparent;
+  }
+
+  .radio-item input[type="radio"]:checked + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background: #ffa500;
+  }
+
+  .input-group {
+    .select .select-icon {
+      top: 16px;
+    }
+  }
+}

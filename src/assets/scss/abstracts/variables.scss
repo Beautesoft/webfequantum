@@ -1,0 +1,34 @@
+$white: #ffffff;
+$black: #000000;
+
+// $primary-color: #ffb26b;
+$primary-color: #3c4087;
+$primaryalt-color: #ee90d4;
+$primary-blue: #023f88;
+$bg-grey: #e5e5e5;
+// $gray: #424242;
+$gray: #595959;
+$green: #09d71e;
+$red: #ff0000;
+$gray-color: #606060;
+$gray-44: #444444;
+$gray-3D: #3d4856;
+$gray-6C: #6c6c6c;
+$gray-90: #909090;
+$gray-55: #555555;
+$danger: #f53232;
+$blue: #4976f2;
+$drk-blue: #007bff;
+$theme-color: linear-gradient(91.15deg, #a0e5f7 0.45%, #ed91d4 100%);
+$theme-blue: #a0e5f7;
+$temptablehead-color: #e8e0e0;
+.tc-primary {
+  color: #003b6d;
+}
+.tc-icon-colour {
+  color: $gray-90;
+}
+
+.fs-6 {
+  font-size: fontSize(6px);
+}

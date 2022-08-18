@@ -1,0 +1,98 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.staffList-container {
+  .btn {
+    height: 35px;
+  }
+  .input-container {
+    width: 100%;
+    max-width: 345px;
+  }
+  .filter-by {
+    padding: 20px 30px;
+    background: $white;
+    margin-top: 20px;
+    .head {
+      font-family: Muli-SemiBold;
+      font-size: fontSize(18px);
+      line-height: 23px;
+      color: #222222;
+    }
+    .label {
+      font-size: fontSize(14px);
+      line-height: 16px;
+      padding: 8px 0;
+    }
+    .form-control {
+      padding: 0;
+      // height: 30px;
+      border: 1px solid #949494;
+    }
+    .filter {
+      .form-control {
+        height: 30px;
+      }
+    }
+    select {
+      background: transparent;
+      color: #696969;
+    }
+    .select .select-icon {
+      top: 11px;
+      right: 18px;
+    }
+  }
+
+  .status-type {
+    .available {
+      width: 7px;
+      height: 7px;
+      position: absolute;
+      top: 19px;
+      left: 22px;
+      background: #09d71e;
+      border-radius: 50%;
+    }
+    .not-available {
+      width: 7px;
+      height: 7px;
+      position: absolute;
+      top: 19px;
+      left: 22px;
+      background: #ff0000;
+      border-radius: 50%;
+    }
+  }
+  .palette {
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    justify-content: space-between;
+    margin-top: 40px;
+    .color-detail {
+      display: flex;
+      .color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $green;
+        &.not-available {
+          background: #ff0000;
+        }
+      }
+      .detail {
+        padding-left: 20px;
+        font-size: fontSize(14px);
+        font-family: Muli-Regular;
+        font-weight: 600;
+      }
+    }
+  }
+  table {
+    td {
+      .option {
+        width: 172px;
+      }
+    }
+  }
+}

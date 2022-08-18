@@ -1,0 +1,24 @@
+@import "../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.dashboard {
+  .head-label {
+    margin: 0;
+    padding: 12px 0px 23px;
+  }
+  .tab-view {
+    a.nav-link {
+      opacity: 0.5;
+    }
+    a.active.nav-link {
+      opacity: 1;
+      border: 0.4px solid $black;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+  .team-label {
+    color: #222222;
+    font-size: fontSize(25px);
+    line-height: 38px;
+    font-family: Muli-SemiBold;
+  }
+}

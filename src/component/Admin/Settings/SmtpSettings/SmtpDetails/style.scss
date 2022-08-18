@@ -1,0 +1,18 @@
+@import "../../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.smtp-Setting-detail-section {
+  .icon-change {
+    button {
+      background: $white;
+      border: 1px solid $primaryalt-color;
+      color: $primaryalt-color;
+      font-family: "Poppins", sans-serif;
+      min-width: 123px;
+      &:hover {
+        background: $primaryalt-color;
+        color: $white;
+        border: 1px solid $primaryalt-color;
+      }
+    }
+  }
+}

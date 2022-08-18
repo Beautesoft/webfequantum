@@ -1,0 +1,19 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.smtp-Setting-section {
+  font-family: "poppins";
+  background: $white;
+  .delete {
+    button {
+      background: $white;
+      border: 1px solid $primaryalt-color;
+      color: $primaryalt-color;
+      font-family: "Poppins", sans-serif;
+      min-width: 123px;
+      &:hover {
+        background: $primaryalt-color;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.view-detail {
+  font-family: Muli-Medium;
+  padding: 1.65rem;
+  .inner-head {
+    line-height: 27px;
+    font-size: fontSize(30px);
+    margin: 0;
+    padding: 18px 0px;
+  }
+  .view-detail-box {
+    background: $white;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    width: 100%;
+    .last-visit {
+      font-size: fontSize(15px);
+      opacity: 0.8;
+      .last-visit-date {
+        color: #555555;
+      }
+    }
+    .modal-avatar {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .customer-detail-heading {
+      font-family: Muli-SemiBold;
+      color: #0d0d0d;
+      opacity: 0.8;
+    }
+    .customer-detail-sub-text {
+      opacity: 0.8;
+      color: $gray-55;
+    }
+    .icon-change {
+      button {
+        background: $white;
+        border: 1px solid #4976f2;
+        color: #4976f2;
+        font-family: "Poppins", sans-serif;
+        min-width: 123px;
+        &:hover {
+          background: #4976f2;
+          color: $white;
+        }
+      }
+      .top-up {
+        border: 1px solid $green;
+        color: $green;
+        &:hover {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+
+    .menu-list {
+      button.treatment {
+        min-width: 160px;
+      }
+      button.active {
+        background: $primary-color;
+        color: $white;
+      }
+      button {
+        font-size: 14px;
+      }
+      button {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        &:hover {
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+
+    // .view-detail-navlink {
+    //   .nav-tabs {
+    //     border: 0;
+    //     .nav-link {
+    //       cursor: pointer;
+    //       border: 0;
+    //     }
+    //   }
+    //   .filled-tabs {
+    //     a {
+    //       cursor: pointer;
+    //       &.active.nav-link {
+    //         background: #f0f8ff;
+    //         border-radius: 6px;
+    //         color: $primary-color;
+    //       }
+    //       &.nav-link {
+    //         background: transparent;
+    //         //   font-family: "Poppins", sans-serif;
+    //         height: 140px;
+    //         padding: 24px;
+    //         display: flex;
+    //         justify-content: center;
+    //         font-weight: 500;
+    //         color: #000000a1;
+    //         font-size: fontSize(18px);
+    //         line-height: 27px;
+    //         .nav-subtext {
+    //           font-size: fontSize(34px);
+    //           line-height: 50px;
+    //           font-weight: 500;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  .customer-details {
+    display: flex;
+    font-size: fontSize(15px);
+    .customer-detail-desc {
+      color: $black;
+      opacity: 0.8;
+      font-family: Muli-Regular;
+      font-weight: 600;
+    }
+    .customer-detail-text {
+      color: $gray-55;
+      opacity: 0.8;
+    }
+    .customer-detail-image {
+      img {
+        border-radius: 5px;
+        margin: 12px;
+      }
+    }
+  }
+  .credit-note {
+    .action-bar {
+      justify-content: center;
+      .credit-note-button {
+        button {
+          width: 224px;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          &:hover {
+            background: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .customerSearch-block {
+    top: 2.5rem;
+    left: 14cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 200px;
+    max-height: 500px;
+    // min-width: 750px;
+    // max-width: 750px;
+    min-width: 60%;
+    max-width: 80%;
+    overflow-y: auto;
+    z-index: 999;
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    margin: 55px 25px 5px 10px !important;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    .search {
+      width: 100%;
+      border: 1px solid #ced4da;
+      background: #f9f9f9;
+      margin-top: 10px;
+      height: 30px;
+    }
+    .table-header {
+      background-color: $temptablehead-color;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    .response-table {
+      height: 48vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.topup-update-modal {
+  .top-up {
+    .input-group {
+      input {
+        border: none;
+        background: #dadadac2;
+      }
+    }
+    .action-bar {
+      text-align: center;
+      .confirm {
+        width: 180px;
+        height: 40px;
+      }
+    }
+  }
+}

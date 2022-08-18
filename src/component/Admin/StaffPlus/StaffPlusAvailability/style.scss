@@ -1,0 +1,135 @@
+@import '../../../../assets/scss/abstracts/abstracts-dir.scss';
+
+.staff-availability {
+  .input-container {
+    width: 100%;
+    max-width: 345px;
+    .search-box {
+      height: 45px;
+      input {
+        height: 43px;
+      }
+      .search-icon {
+        top: 14px;
+      }
+    }
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    font-family: Muli-Regular;
+    // margin-bottom: 20px;
+    .category {
+      font-size: fontSize(18px);
+      line-height: 23px;
+    }
+    .sub-category {
+      font-weight: bold;
+      font-size: fontSize(18px);
+      line-height: 23px;
+    }
+    i {
+      font-size: fontSize(12px);
+      color: #222222;
+      opacity: 0.78;
+    }
+  }
+  .table {
+    background: $white;
+    tr{
+      th.date-title{
+        padding: 30px;
+        text-align: center;
+      }
+    }
+    td {
+      border-top: none;
+    }
+  }
+  .table-head-available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: 42px;
+      min-height: 42px;
+      border: 2px solid $white;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+    p {
+      font-size: fontSize(14px);
+      font-family: Muli-Regular;
+      margin: 0;
+    }
+  }
+  .date-available {
+    font-size: fontSize(16px);
+    font-family: Muli-Regular;
+    line-height: 20px;
+    color: $primary-blue;
+  }
+  .data-available {
+    background: #f9f9f9;
+    text-align: center;
+    font-size: fontSize(14px);
+    font-family: Muli-Regular;
+    color: #5f5f5f;
+    margin-bottom: 5px;
+  }
+  .in-out {
+    font-size: fontSize(10px);
+    font-family: Muli-Regular;
+    color: $black;
+  }
+  .work-schedule {
+    .table {
+      td {
+        padding: 5px 3px;
+      }
+    }
+    .label {
+      width: 237px;
+      text-align: end;
+      div {
+        font-size: fontSize(16px);
+        font-family: Muli-Bold;
+      }
+    }
+    .data {
+      div {
+        background: #f9f9f9;
+        text-align: center;
+        font-size: fontSize(14px);
+        font-family: Muli-Regular;
+        color: #5f5f5f;
+      }
+    }
+  }
+  .palette {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    .color-detail {
+      display: flex;
+      .color {
+        width: 25px;
+        height: 25px;
+        background: rgba(255, 0, 0, 0.37);
+        &.OT{
+            background: rgba(9, 215, 30, 0.44);
+        }
+        &.early{
+            background: rgba(13, 9, 215, 0.44);
+        }
+      }
+      .detail {
+        padding-left: 20px;
+        font-size: fontSize(14px);
+        font-family: Muli-Regular;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+@import "../../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.treatment-done-new {
+  background-color: #ffffff;
+  .header {
+    .select-year {
+      .name {
+        width: 120px;
+      }
+      .input-group {
+        width: 100px;
+      }
+    }
+  }
+  .cart-border {
+    border: 1px solid black;
+  }
+  .form-check {
+    margin-top: -15px;
+  }
+  .item-list {
+    .table {
+      max-height: 500px;
+      overflow-y: auto;
+      .reversal {
+        color: black;
+        border: 1px solid;
+        margin: 5px;
+        padding: 0px 5px;
+        background: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.transaction-done-reversal {
+  .treatment-done {
+    .adjustment {
+      .select {
+        .select-form-control {
+          height: 100%;
+        }
+        .select-icon {
+          top: 11px;
+        }
+      }
+    }
+  }
+}
+.treatment-done {
+  .emp-image {
+    .emp {
+      width: 100px;
+      text-align: center;
+    }
+  }
+}
+.treatmentDone-menu {
+  .menus.active {
+    background: #ffb26b;
+    padding: 10px;
+    width: 100%;
+    border: 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
+.btnRedeem {
+  cursor: pointer;
+  border: 1px solid green;
+  padding: 8px;
+  min-width: 64px;
+  background: green;
+  transition: all 0.1s ease-in;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.btnReversal {
+  cursor: pointer;
+  border: 1px solid #ffb26b;
+  padding: 8px;
+  min-width: 64px;
+  background: #ffb26b;
+  transition: all 0.1s ease-in;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.btnExchange {
+  cursor: pointer;
+  border: 1px solid #1a202c;
+  padding: 8px;
+  min-width: 64px;
+  background: $primary-color;
+  transition: all 0.1s ease-in;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.btnExchange:hover {
+  color: $primary-color;
+  background: #ffffff;
+  border: 1px solid $primary-color;
+}
+
+.btnRedeem:hover {
+  color: green;
+  background: #ffffff;
+  border: 1px solid green;
+}
+
+.btnReversal:hover {
+  color: #ffb26b;
+  background: #ffffff;
+  border: 1px solid #ffb26b;
+}
+
+.transaction-done-exchange {
+  .modal-content {
+    min-height: 500px;
+  }
+  .service-tab {
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px $gray;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 4px;
+    background: whitesmoke;
+    //box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+    .price {
+      .non-retail {
+        display: flex;
+        justify-content: space-between;
+        .foc-icon {
+          margin-top: -5px;
+        }
+      }
+    }
+    .service-ttl {
+      height: 47px;
+      font-weight: 500;
+      overflow: hidden;
+    }
+    .images {
+      height: 110px;
+      background: #00000082;
+      overflow: hidden;
+      text-align: center;
+      img {
+        // max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .button {
+      .detail-button {
+        button {
+          border-radius: 2px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

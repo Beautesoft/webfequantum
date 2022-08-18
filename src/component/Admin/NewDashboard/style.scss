@@ -1,0 +1,78 @@
+@import "../../../assets/scss/abstracts/abstracts-dir.scss";
+
+.dashboard {
+  background: #fff;
+  .Accord-header {
+    color: $primary-color;
+    background: $theme-blue;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .head-label {
+    margin: 0;
+    padding: 12px 0px 23px;
+  }
+
+  .tab-view {
+    a.nav-link {
+      opacity: 0.5;
+    }
+    a.active.nav-link {
+      opacity: 1;
+      border: 0.4px solid $black;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+  .team-label {
+    color: #222222;
+    font-size: fontSize(25px);
+    line-height: 38px;
+    font-family: Muli-SemiBold;
+  }
+}
+.piechart {
+  .highcharts-container {
+    width: 100% !important;
+  }
+
+  .highcharts-root {
+    width: 100% !important;
+  }
+  .Accord-header {
+    color: $primary-color;
+    background: $theme-blue;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .filled-tabs a.nav-link {
+    width: 140px !important;
+  }
+  .filled-tabs a.active.nav-link {
+    width: 140px !important;
+  }
+  .day-border {
+    // padding: 2px;
+    border-radius: 5px;
+    border-left: 5px solid blueviolet;
+  }
+  .week-border {
+    border-radius: 5px;
+    border-left: 5px solid #23c482;
+  }
+  .month-border {
+    border-radius: 5px;
+    border-left: 5px solid lightcoral;
+  }
+  .year-border {
+    border-radius: 5px;
+    border-left: 5px solid #96c344;
+  }
+  .chart-border {
+    border-radius: 5px;
+    border: 2px solid $theme-blue;
+  }
+  .tab-border {
+    border-radius: 5px;
+    border: 0.5px solid $theme-blue;
+  }
+}

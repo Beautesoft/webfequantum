@@ -1,0 +1,150 @@
+@import "../../../../../assets/scss/abstracts/abstracts-dir.scss";
+.scheduler-container {
+  height: 100vh;
+  // width: 100vw;
+  .input-group {
+    .select {
+      .select-icon {
+        top: 18px;
+      }
+    }
+  }
+  .dhx_cal_container {
+    .dhx_cal_data {
+      .dhx_scale_holder {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.dhx_cal_event .dhx_body,
+.dhx_cal_event .dhx_footer,
+.dhx_cal_event .dhx_header,
+.dhx_cal_event .dhx_title {
+  background: #ebf4ff;
+  color: $black;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid;
+}
+.dhx_cal_event .dhx_title {
+  height: fit-content;
+  padding-left: 10px;
+  padding-top: 0px;
+  margin: 0px;
+}
+.dhx_cal_event .dhx_body {
+  height: 19px !important;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.dhx_cal_tab {
+  color: #626262;
+  border: 1px solid $black;
+  &.active {
+    background: $primary-color;
+  }
+}
+.dhx_cal_tab.active:hover {
+  color: $white;
+  background-color: $primary-color;
+}
+.dhx_cal_navline.dhx_cal_navline_flex .dhx_cal_tab {
+  border-left-style: none;
+  box-shadow: -1px 0 0 $primary-color;
+}
+.dhx_cal_today_button {
+  color: $primary-color;
+}
+.clip-icon {
+  position: absolute;
+  left: 30px;
+  font-size: 10px;
+}
+.scheduler {
+  // width: 228px;
+  height: 41px;
+  text-align: center;
+  background: $primary-color;
+}
+.appointment-available-staff {
+  height: 107vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.schedule-label {
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  .vector {
+    width: 1px;
+    height: 60px;
+    margin: 0px 4px;
+    background: $white;
+  }
+  .status-report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 14px;
+    color: $white;
+    .status {
+      font-size: fontSize(11px);
+      font-family: Muli-SemiBold;
+    }
+    .status-count {
+      font-size: fontSize(15px);
+      font-family: Muli-SemiBold;
+      border: 1px solid $white;
+      padding: 3px 20px;
+      border-radius: 5px;
+    }
+  }
+}
+.appointment {
+  // width: 228px;
+  .time {
+    color: #c2c2c2;
+    font-size: fontSize(14px);
+    font-family: Muli-Regular;
+  }
+  .meridiem {
+    line-height: 10px;
+  }
+  .name {
+    font-size: fontSize(16px);
+    font-family: Muli-SemiBold;
+    color: #393838;
+  }
+  .treatment {
+    font-size: fontSize(14px);
+    font-family: Muli-Regular;
+    color: #5a5a5a;
+  }
+  .detail {
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      color: #222222;
+    }
+    .head-message {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #000000;
+    }
+    .date {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #676767;
+    }
+  }
+}

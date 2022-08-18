@@ -1,0 +1,1 @@
+export { Payment } from 'component/Admin/Payment';
